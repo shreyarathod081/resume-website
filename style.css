@@ -1,0 +1,450 @@
+/* ==============================
+   BASIC SETUP
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #F8EFF0;
+    color: #513B50;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   NAVIGATION BAR
+================================ */
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px 8%;
+    border-bottom: 1px solid #EAD9DF;
+    box-shadow: 0 3px 15px rgba(81, 59, 80, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #513B50;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #513B50;
+    margin-left: 28px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #A77C91;
+}
+
+
+/* ==============================
+   MAIN CONTENT
+================================ */
+
+main {
+    padding: 60px 8%;
+}
+
+
+/* ==============================
+   HOME PAGE
+================================ */
+
+.home-section {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 40px 0;
+}
+
+/* Profile Image */
+
+.home-image img {
+    width: 330px;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0 12px 30px rgba(81, 59, 80, 0.12);
+}
+
+/* Introduction */
+
+.intro-content {
+    max-width: 620px;
+}
+
+.intro-content h1 {
+    font-size: 45px;
+    color: #513B50;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.intro-content h3 {
+    color: #A77C91;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.intro-content p {
+    color: #665461;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+/* About Button */
+
+.intro-content a {
+    display: inline-block;
+    background-color: #513B50;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.intro-content a:hover {
+    background-color: #A77C91;
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   ABOUT ME SECTION
+================================ */
+
+.about-section {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 55px;
+    border: 1px solid #EAD9DF;
+    box-shadow: 0 5px 20px rgba(81, 59, 80, 0.04);
+}
+
+.about-section h1 {
+    font-size: 35px;
+    color: #513B50;
+    margin-bottom: 18px;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #665461;
+    line-height: 1.9;
+    max-width: 1000px;
+}
+
+
+/* ==============================
+   SECTION HEADINGS
+================================ */
+
+main section > h2 {
+    font-size: 29px;
+    color: #513B50;
+    margin-bottom: 25px;
+    font-weight: 650;
+}
+
+
+/* ==============================
+   EDUCATION SECTION
+================================ */
+
+.education-section {
+    margin-bottom: 55px;
+}
+
+.education-card {
+    background-color: #FFFFFF;
+    padding: 28px;
+    margin-bottom: 20px;
+    border: 1px solid #EAD9DF;
+    border-left: 4px solid #A77C91;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(81, 59, 80, 0.04);
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(81, 59, 80, 0.09);
+}
+
+.education-card h3 {
+    color: #513B50;
+    margin-bottom: 8px;
+    font-size: 19px;
+}
+
+.education-card p {
+    color: #766673;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   EXPERIENCE SECTION
+================================ */
+
+.experience-section {
+    margin-bottom: 55px;
+}
+
+.experience-card {
+    background-color: #F3E5EA;
+    padding: 30px;
+    border: 1px solid #E8D2DC;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(81, 59, 80, 0.04);
+}
+
+.experience-card h3 {
+    color: #513B50;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.experience-duration {
+    color: #A77C91;
+    font-size: 14px;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.experience-card p {
+    color: #665461;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   ACHIEVEMENTS SECTION
+================================ */
+
+.achievements-section {
+    margin-bottom: 55px;
+}
+
+.achievement-card {
+    background-color: #FFFFFF;
+    padding: 27px;
+    margin-bottom: 20px;
+    border: 1px solid #EAD9DF;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(81, 59, 80, 0.04);
+    transition: 0.3s;
+}
+
+.achievement-card:hover {
+    border-color: #D6A6B8;
+    transform: translateY(-3px);
+}
+
+.achievement-card h3 {
+    color: #513B50;
+    font-size: 19px;
+    margin-bottom: 9px;
+}
+
+.achievement-card p {
+    color: #766673;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   SKILLS AND INTERESTS
+================================ */
+
+.skills-section,
+.interests-section {
+    margin-bottom: 55px;
+}
+
+.skill-card,
+.interest-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin: 0 1% 18px 0;
+    border: 1px solid #EAD9DF;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(81, 59, 80, 0.04);
+    transition: 0.3s;
+}
+
+.skill-card:hover,
+.interest-card:hover {
+    background-color: #F3E5EA;
+    border-color: #D6A6B8;
+    transform: translateY(-3px);
+}
+
+.skill-card h3,
+.interest-card h3 {
+    color: #513B50;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.skill-card p,
+.interest-card p {
+    color: #766673;
+    font-size: 15px;
+}
+
+
+/* ==============================
+   CONTACT SECTION
+================================ */
+
+.contact-section {
+    margin-bottom: 35px;
+}
+
+.contact-card {
+    background-color: #513B50;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #513B50;
+}
+
+.contact-card h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    color: #F8EFF0;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.contact-card a {
+    color: #E8C6D3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-card a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background-color: #3D2C3B;
+    color: #F8EFF0;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 9px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 35px 5%;
+    }
+
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .home-image img {
+        width: 260px;
+        height: 320px;
+    }
+
+    .intro-content h1 {
+        font-size: 34px;
+    }
+
+    .intro-content h3 {
+        font-size: 17px;
+    }
+
+    .about-section {
+        padding: 25px;
+    }
+
+    .about-section h1 {
+        font-size: 29px;
+    }
+
+    main section > h2 {
+        font-size: 25px;
+    }
+
+    .skill-card,
+    .interest-card {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .education-card,
+    .achievement-card,
+    .experience-card {
+        padding: 22px;
+    }
+}
